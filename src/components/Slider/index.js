@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./styles.css";
+import styles from "./styles.module.css";
 
 const Slider = () => {
-  return <div className="slider">Slider</div>;
+  return <div className={styles.slider}>Slider</div>;
 };
 
 export default Slider;
