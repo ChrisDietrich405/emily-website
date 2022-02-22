@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const BlogSection = () => {
   return (
     <section className={styles.blog_section}>
-      <div className={styles.inner}></div>
+      <div className={styles.inner}>Hi</div>
     </section>
   );
 };
