@@ -1,0 +1,15 @@
+.footer_container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_container img {
+  max-width: 100%;
+}
+
+.footer_container .footer_pic {
+  max-width: 130px;
+}

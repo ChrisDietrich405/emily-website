@@ -10,15 +10,35 @@ const Cards = () => {
         <div className={styles.grid_container}>
           <div className={styles.grid}>
             <img className={styles.grid_pic} src={grid1} alt="grid-pic"></img>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              possimus?
+            </p>
+            <a href="#">Lorem ipsum dolor sit.</a>
           </div>
           <div className={styles.grid}>
             <img className={styles.grid_pic} src={grid2} alt="grid-pic"></img>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              possimus?
+            </p>
+            <a href="#">Lorem ipsum dolor sit.</a>
           </div>
           <div className={styles.grid}>
             <img className={styles.grid_pic} src={grid1} alt="grid-pic"></img>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              possimus?
+            </p>
+            <a href="#">Lorem ipsum dolor sit.</a>
           </div>
           <div className={styles.grid}>
             <img className={styles.grid_pic} src={grid2} alt="grid-pic"></img>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              possimus?
+            </p>
+            <a href="#">Lorem ipsum dolor sit.</a>
           </div>
         </div>
       </div>
