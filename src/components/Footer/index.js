@@ -22,10 +22,10 @@ const Footer = () => {
                 accusantium, sit modi debitis repellat culpa.
               </p>
             </div>
-            <div>
+            <div className={styles.meatless_monday_logo}>
               <img src={grid1} alt="picture of dietician"></img>
             </div>
-            <div>
+            <div className={styles.credentials}>
               {" "}
               <img src={grid1} alt="picture of dietician"></img>
               <p>

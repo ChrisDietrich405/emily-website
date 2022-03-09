@@ -6,10 +6,17 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.footer_container img {
-  max-width: 100%;
+.footer_pic {
+  max-width: 130px;
 }
 
-.footer_container .footer_pic {
-  max-width: 130px;
+.meatless_monday_logo {
+  max-width: 175px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.credentials img {
+  max-width: 252px;
+  margin-left: auto;
 }
