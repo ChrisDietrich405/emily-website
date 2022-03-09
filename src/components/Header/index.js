@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import SocialIcons from "../SocialIcons";
 
 import styles from "./styles.module.css";
 
@@ -8,7 +9,8 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.social_icons}>
         <div className={styles.inner}>
-          <ul className={styles.social_icons_list}>
+          <SocialIcons />
+          {/* <ul className={styles.social_icons_list}>
             <li>
               <a href="#">
                 <BsFacebook />
@@ -24,7 +26,7 @@ const Header = () => {
                 <BsTwitter />
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className={styles.header_content}>

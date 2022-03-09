@@ -1,3 +1,13 @@
+.inner {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer_content {
+  padding-bottom: 50px;
+}
+
 .footer_container {
   max-width: 1200px;
   margin-left: auto;
@@ -10,6 +20,10 @@
   max-width: 130px;
 }
 
+.nutritionist_pic_container p {
+  padding-top: 10px;
+}
+
 .meatless_monday_logo {
   max-width: 175px;
   margin-right: auto;
@@ -19,4 +33,19 @@
 .credentials img {
   max-width: 252px;
   margin-left: auto;
+}
+
+.credentials p {
+  text-align: right;
+  padding-top: 15px;
+}
+
+.footer_contacts {
+  background: #f8f8f8;
+}
+
+.footer_contacts .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

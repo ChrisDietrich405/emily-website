@@ -1,3 +1,7 @@
+.section {
+  margin-bottom: 150px;
+}
+
 .grid_container {
   max-width: 1200px;
   margin-right: auto;
