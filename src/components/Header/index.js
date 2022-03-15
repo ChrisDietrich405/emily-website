@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import SocialIcons from "../SocialIcons";
@@ -6,6 +6,8 @@ import SocialIcons from "../SocialIcons";
 import styles from "./styles.module.css";
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.social_icons}>
@@ -37,20 +39,27 @@ const Header = () => {
             <ul>
               <li>
                 <Link to="/">Home</Link>
-                {/* <a href="#">Home</a> */}
               </li>
               <li>
-                <a href="#">Recipes</a>
+                <Link to="/recipes">Recipes</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <a href="#">Services</a>
+                <Link to="/services">Services</Link>
               </li>
               <li>
-                {/* <a href="#">Blogs</a> */}
-                <Link to="/blogs">Blogs</Link>
+                <Link onClick={(e) => setIsActive(!isActive)} to="/blogs">
+                  Blogs
+                </Link>
+
+                {isActive && (
+                  <div className="dropdown-content">
+                    <div>stuff</div>
+                    <div>some other stuff</div>
+                  </div>
+                )}
               </li>
             </ul>
           </div>
