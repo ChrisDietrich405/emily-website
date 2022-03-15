@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import SocialIcons from "../SocialIcons";
 
@@ -35,7 +36,8 @@ const Header = () => {
           <div className={styles.nav_menu}>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
+                {/* <a href="#">Home</a> */}
               </li>
               <li>
                 <a href="#">Recipes</a>
@@ -44,10 +46,11 @@ const Header = () => {
                 <a href="#">Contact</a>
               </li>
               <li>
-                <a href="#">Products</a>
+                <a href="#">Services</a>
               </li>
               <li>
-                <a href="#">Search</a>
+                {/* <a href="#">Blogs</a> */}
+                <Link to="/blogs">Blogs</Link>
               </li>
             </ul>
           </div>
