@@ -6,8 +6,6 @@ import SocialIcons from "../SocialIcons";
 import styles from "./styles.module.css";
 
 const Header = () => {
-  const [isActive, setIsActive] = useState(false);
-
   return (
     <header className={styles.header}>
       <div className={styles.social_icons}>
@@ -47,19 +45,23 @@ const Header = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to="/services">
+                  Services{" "}
+                  <div className={styles.dropdown_content}>
+                    <Link>stuff</Link>
+                    <Link>some other stuff</Link>
+                    <Link>more stuff</Link>
+                  </div>
+                </Link>
               </li>
               <li>
-                <Link onClick={(e) => setIsActive(!isActive)} to="/blogs">
-                  Blogs
-                </Link>
-
-                {isActive && (
-                  <div className="dropdown-content">
-                    <div>stuff</div>
-                    <div>some other stuff</div>
+                <Link to="/blogs">
+                  Blogs{" "}
+                  <div className={styles.dropdown_content}>
+                    <Link>stuff</Link>
+                    <Link>some other stuff</Link>
                   </div>
-                )}
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,3 +1,7 @@
+:root {
+  --secondary: #f8f8f8;
+}
+
 li {
   list-style: none;
 }
@@ -16,7 +20,7 @@ li {
 }
 
 .social_icons {
-  background: rgb(202, 195, 202);
+  background: var(--secondary);
 }
 
 .social_icons .inner {
@@ -53,4 +57,30 @@ li {
 
 .nav_menu a {
   text-decoration: none;
+  position: relative;
+}
+
+.nav_menu a:hover > .dropdown_content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown_content {
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.dropdown_content > a {
+  padding: 10px;
+  display: block;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.dropdown_content > a:hover {
+  background-color: var(--secondary);
 }
