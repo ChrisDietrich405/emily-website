@@ -11,23 +11,6 @@ const Header = () => {
       <div className={styles.social_icons}>
         <div className={styles.inner}>
           <SocialIcons />
-          {/* <ul className={styles.social_icons_list}>
-            <li>
-              <a href="#">
-                <BsFacebook />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <BsInstagram />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <BsTwitter />
-              </a>
-            </li>
-          </ul> */}
         </div>
       </div>
       <div className={styles.header_content}>

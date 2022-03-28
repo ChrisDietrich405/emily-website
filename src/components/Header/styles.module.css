@@ -60,11 +60,6 @@ li {
   position: relative;
 }
 
-.nav_menu a:hover > .dropdown_content {
-  opacity: 1;
-  visibility: visible;
-}
-
 .dropdown_content {
   transition: 0.5s;
   opacity: 0;
@@ -72,6 +67,11 @@ li {
   background-color: #fff;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   position: absolute;
+}
+
+.nav_menu a:hover > .dropdown_content {
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown_content > a {
