@@ -15,6 +15,7 @@ a {
   position: fixed;
   width: 100%;
   background: #fff;
+  top: 0;
 }
 
 .inner {

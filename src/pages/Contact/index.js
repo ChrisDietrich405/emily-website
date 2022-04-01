@@ -25,22 +25,24 @@ function Contact() {
       <div className={styles.inner}>
         <div className={styles.columns}>
           <div className={styles.form_wrapper}>
-            <form onSubmit={handleSubmit} className="form">
-              <div className="name">
-                <label for="firstName">First name</label>
+            <form onSubmit={handleSubmit} className={styles.form}>
+              <div className={styles.names}>
+                <label for="firstName">First Name</label>
                 <input
                   type="text"
                   ref={firstNameRef}
                   name="firstName"
-                  className={styles.first_name}
+                  placeholder="First Name"
+                  className={styles.input_text}
                   tabIndex="1"
                 />
-                <label for="lastName">Last name</label>
+                <label for="lastName">Last Name</label>
                 <input
                   type="text"
                   ref={lastNameRef}
                   name="lastName"
-                  className={styles.last_name}
+                  placeholder="Last Name"
+                  className={styles.input_text}
                   tabIndex="2"
                 />
               </div>
@@ -50,7 +52,7 @@ function Contact() {
                 name="email"
                 ref={emailRef}
                 id="email"
-                className={styles.email}
+                className={styles.input_text}
                 placeholder="example@corp.com"
                 tabIndex="3"
               />
@@ -66,6 +68,9 @@ function Contact() {
                 Send
               </button>
             </form>
+          </div>
+          <div className={styles.picture_wrapper}>
+            <h1>Picture</h1>
           </div>
         </div>
       </div>
