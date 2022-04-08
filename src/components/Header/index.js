@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import SocialIcons from "../SocialIcons";
 
 import styles from "./styles.module.css";

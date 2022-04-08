@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 
+import grid1 from "../../images/tofu.png";
+
 import styles from "./styles.module.css";
 
 function Contact() {
@@ -26,51 +28,63 @@ function Contact() {
         <div className={styles.columns}>
           <div className={styles.form_wrapper}>
             <form onSubmit={handleSubmit} className={styles.form}>
+              <h1>Contact Us</h1>
+              <p>We'll get back to you asap!</p>
               <div className={styles.names}>
-                <label for="firstName">First Name</label>
+                <div className={styles.form_group}>
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    ref={firstNameRef}
+                    name="firstName"
+                    placeholder="First Name"
+                    className={styles.input_text}
+                    tabIndex="1"
+                  />
+                </div>
+                <div className={styles.form_group}>
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    ref={lastNameRef}
+                    name="lastName"
+                    placeholder="Last Name"
+                    className={styles.input_text}
+                    tabIndex="2"
+                  />
+                </div>
+              </div>
+              <div className={styles.form_group}>
+                <label for="email">Email</label>
                 <input
-                  type="text"
-                  ref={firstNameRef}
-                  name="firstName"
-                  placeholder="First Name"
+                  type="email"
+                  name="email"
+                  ref={emailRef}
+                  id="email"
                   className={styles.input_text}
-                  tabIndex="1"
-                />
-                <label for="lastName">Last Name</label>
-                <input
-                  type="text"
-                  ref={lastNameRef}
-                  name="lastName"
-                  placeholder="Last Name"
-                  className={styles.input_text}
-                  tabIndex="2"
+                  placeholder="example@corp.com"
+                  tabIndex="3"
                 />
               </div>
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                ref={emailRef}
-                id="email"
-                className={styles.input_text}
-                placeholder="example@corp.com"
-                tabIndex="3"
-              />
-              <label for="message">Message</label>
+              <div className={styles.form_group}>
+                <label for="message">Message</label>
 
-              <textarea
-                placeholder="Start typing..."
-                className={styles.message}
-                name="message"
-                ref={messageRef}
-              />
-              <button type="submit" className={styles.send_message}>
-                Send
-              </button>
+                <textarea
+                  placeholder="Start typing..."
+                  className={styles.message}
+                  name="message"
+                  ref={messageRef}
+                />
+              </div>
+              <div className={styles.form_group}>
+                <button type="submit" className={styles.send_message}>
+                  Send
+                </button>
+              </div>
             </form>
           </div>
           <div className={styles.picture_wrapper}>
-            <h1>Picture</h1>
+            <img className={styles.grid_pic} src={grid1} alt="grid-pic"></img>
           </div>
         </div>
       </div>
