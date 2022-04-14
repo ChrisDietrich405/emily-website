@@ -1,11 +1,13 @@
 import React from "react";
 
-import bannerPicture from "../../images/chickpeas.jpg";
-
 import styles from "./styles.module.css";
 
-const Banner = () => {
-  return <div className={StyleSheet.con}>Banner</div>;
+const Banner = ({ picturePath }) => {
+  return (
+    <div className={styles.container}>
+      <img src={picturePath} alt="" />
+    </div>
+  );
 };
 
 export default Banner;

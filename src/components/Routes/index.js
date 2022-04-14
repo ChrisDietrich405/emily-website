@@ -6,8 +6,6 @@ import Contact from "../../pages/Contact";
 import Services from "../../pages/Services";
 import Blogs from "../../pages/Blogs";
 
-// import Validate from "../../pages/Validate";
-
 export default function Routes() {
   return (
     <Switch>
@@ -16,8 +14,6 @@ export default function Routes() {
       <Route path="/contact" component={Contact} />
       <Route path="/services" component={Services} />
       <Route path="/blogs" component={Blogs} />
-
-      {/* <Route path="validate" component={Validate} /> */}
     </Switch>
   );
 }
