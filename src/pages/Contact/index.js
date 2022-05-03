@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { ContactResource } from "../../resources/contact-resource";
 
 import grid1 from "../../images/tofu.png";
 
@@ -19,6 +20,7 @@ function Contact() {
       email: emailRef.current.value,
       message: messageRef.current.value,
     };
+    ContactResource.sendForm(data);
     alert("tadaaa!: \n" + JSON.stringify(data) + "Your data 😎");
   };
 
