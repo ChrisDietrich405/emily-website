@@ -5,6 +5,7 @@ const RecipeCard = ({ title, image, category }) => {
     <div>
       <h3>{title}</h3>
       <img src={image} alt="" />
+      <p>{category}</p>
     </div>
   );
 };

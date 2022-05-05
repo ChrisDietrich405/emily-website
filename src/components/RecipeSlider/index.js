@@ -6,29 +6,32 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RecipeCard from "../RecipeCard";
 
+const slideshow1 = window.location.origin + "/assets/images/tofu.png";
+const slideshow2 = window.location.origin + "/assets/images/chickpeas.jpg";
+
 const RecipeSlider = () => {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
   };
 
   const recipesList = [
     {
-      img: "../images/tofu.png",
+      img: slideshow1,
       title: "quinoa dinner",
       category: "main course",
     },
     {
-      img: "bye",
+      img: slideshow2,
       title: "food dinner",
       category: "dessert",
     },
     {
-      img: "opa",
+      img: slideshow1,
       title: "quinoa dinner",
       category: "main course",
     },
