@@ -2,18 +2,19 @@ import { useState, useEffect } from "react";
 
 import { FaPlay, FaPause } from "react-icons/fa";
 
-import slideshow1 from "../../images/chickpeas.jpg";
-import slideshow2 from "../../images/tofu.png";
+// import slideshow1 from "../../public/assets/images/chickpeas.jpg";
+// import slideshow2 from "../../public/assets/images/tofu.png";
 
 import "./styles.css";
+
+const slideshow1 = window.location.origin + "/assets/images/tofu.png";
+const slideshow2 = window.location.origin + "/assets/images/chickpeas.jpg";
 
 export default function Slideshow() {
   const imageArray = [slideshow1, slideshow2];
 
   const [pause, setPause] = useState(false);
   const [index, setIndex] = useState(0);
-
-  console.log(index);
 
   useEffect(() => {
     const interval = setInterval(() => {

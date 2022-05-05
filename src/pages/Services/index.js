@@ -1,7 +1,8 @@
 import React from "react";
 
 import Banner from "../../components/Banner";
-import bannerPicture from "../../images/tofu.png";
+
+const bannerPicture = window.location.origin + "/assets/images/tofu.png";
 
 function Services() {
   return (

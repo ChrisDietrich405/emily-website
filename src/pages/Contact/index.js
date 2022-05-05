@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { ContactResource } from "../../resources/contact-resource";
 
-import grid1 from "../../images/tofu.png";
+// import grid1 from "../../images/tofu.png";
 
 import styles from "./styles.module.css";
 
@@ -86,7 +86,11 @@ function Contact() {
             </form>
           </div>
           <div className={styles.picture_wrapper}>
-            <img className={styles.grid_pic} src={grid1} alt="grid-pic"></img>
+            <img
+              className={styles.grid_pic}
+              src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+              alt="grid-pic"
+            ></img>
           </div>
         </div>
       </div>

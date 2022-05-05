@@ -18,7 +18,7 @@ const RecipeSlider = () => {
 
   const recipesList = [
     {
-      img: "hello",
+      img: "../images/tofu.png",
       title: "quinoa dinner",
       category: "main course",
     },
@@ -36,7 +36,13 @@ const RecipeSlider = () => {
   return (
     <Slider {...settings}>
       {recipesList.map((recipeListItem) => {
-        <RecipeCard />;
+        return (
+          <RecipeCard
+            title={recipeListItem.title}
+            image={recipeListItem.img}
+            category={recipeListItem.category}
+          />
+        );
       })}
     </Slider>
   );

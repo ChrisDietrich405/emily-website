@@ -1,9 +1,9 @@
 import React from "react";
+import RecipeSlider from "../../components/RecipeSlider";
 
 import Banner from "../../components/Banner";
-import bannerPicture from "../../images/chickpeas.jpg";
-
-import RecipeSlider from "../../components/RecipeSlider";
+// import bannerPicture from "../../images/chickpeas.jpg";
+const bannerPicture = window.location.origin + "/assets/images/tofu.png";
 
 function Recipes() {
   return (

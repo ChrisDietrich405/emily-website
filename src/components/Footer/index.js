@@ -1,5 +1,5 @@
-import grid1 from "../../images/chickpeas.jpg";
-import grid2 from "../../images/tofu.png";
+// import grid1 from "../../images/chickpeas.jpg";
+// import grid2 from "../../images/tofu.png";
 
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className={styles.footer_container}>
               <div className={styles.nutritionist_pic_container}>
                 <img
-                  src={grid1}
+                  src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
                   className={styles.footer_pic}
                   alt="picture of dietician"
                 ></img>
@@ -27,11 +27,17 @@ const Footer = () => {
                 </p>
               </div>
               <div className={styles.meatless_monday_logo}>
-                <img src={grid1} alt="picture of dietician"></img>
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+                  alt="picture of dietician"
+                ></img>
               </div>
               <div className={styles.credentials}>
                 {" "}
-                <img src={grid1} alt="picture of dietician"></img>
+                <img
+                  src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+                  alt="picture of dietician"
+                ></img>
                 <p>Lorem ipsum dolor sit, amet</p>
                 <p>accusantium, sit modi debitis </p>
               </div>
