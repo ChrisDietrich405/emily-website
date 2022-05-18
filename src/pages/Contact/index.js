@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { ContactResource } from "../../resources/contact-resource";
 
-// import grid1 from "../../images/tofu.png";
-
 import styles from "./styles.module.css";
 
 function Contact() {

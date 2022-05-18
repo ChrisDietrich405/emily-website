@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 
 import { FaPlay, FaPause } from "react-icons/fa";
 
-// import slideshow1 from "../../public/assets/images/chickpeas.jpg";
-// import slideshow2 from "../../public/assets/images/tofu.png";
-
 import "./styles.css";
 
 const slideshow1 = window.location.origin + "/assets/images/tofu.png";
