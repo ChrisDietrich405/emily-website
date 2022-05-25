@@ -1,6 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
+
 import RecipeCard from "../RecipeCard";
 
 import styles from "./styles.module.css";
@@ -14,27 +19,23 @@ const RecipeSlider = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, right: "25px", display: "block", width: "50px" }}
-        onClick={onClick}
-      />
+      <button className={styles.next_button} onClick={onClick}>
+        <BsFillArrowRightCircleFill className={styles.next_arrow} />
+      </button>
+      // <div
+      //   className={className}
+      //   style={{ ...style, right: "25px", display: "block" }}
+      //   onClick={onClick}
+      // />
     );
   }
 
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          zIndex: 1,
-          left: "25px",
-          display: "block",
-        }}
-        onClick={onClick}
-      />
+      <button className={styles.prev_button} onClick={onClick}>
+        <BsFillArrowLeftCircleFill className={styles.prev_arrow} />
+      </button>
     );
   }
 
