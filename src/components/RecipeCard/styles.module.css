@@ -1,0 +1,33 @@
+.card_container {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card_container .image_container img {
+  display: none;
+}
+
+.image_container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.card_container p {
+  color: #63b5b5;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.card_container h3 {
+  color: #000;
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+.card_container h3:hover {
+  color: #424648;
+}

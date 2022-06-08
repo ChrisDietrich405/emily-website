@@ -1,11 +1,17 @@
 import React from "react";
+import styles from "./styles.module.css";
 
 const RecipeCard = ({ title, image, category }) => {
   return (
-    <div>
-      <h3>{title}</h3>
-      <img src={image} alt="" />
+    <div className={styles.card_container}>
+      <div
+        className={styles.image_container}
+        style={{ backgroundImage: `url(${image})` }}
+      >
+        <img className={styles.image} src={image} alt={title} title={title} />
+      </div>
       <p>{category}</p>
+      <h3>{title}</h3>
     </div>
   );
 };
