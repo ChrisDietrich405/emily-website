@@ -22,11 +22,6 @@ const RecipeSlider = () => {
       <button className={styles.next_button} onClick={onClick}>
         <BsFillArrowRightCircleFill className={styles.next_arrow} />
       </button>
-      // <div
-      //   className={className}
-      //   style={{ ...style, right: "25px", display: "block" }}
-      //   onClick={onClick}
-      // />
     );
   }
 

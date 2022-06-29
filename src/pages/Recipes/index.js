@@ -2,7 +2,6 @@ import React from "react";
 import RecipeSlider from "../../components/RecipeSlider";
 
 import Banner from "../../components/Banner";
-// import bannerPicture from "../../images/chickpeas.jpg";
 
 import styles from "./styles.module.css";
 

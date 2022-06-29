@@ -13,11 +13,9 @@ function App() {
     <div className={styles.main_wrapper}>
       <Router>
         <Header />
-        {/* <Slider /> */}
+
         <Routes />
-        {/* <Slideshow />
-        <Cards />
-        <PictureCards /> */}
+
         <Footer />
       </Router>
     </div>
