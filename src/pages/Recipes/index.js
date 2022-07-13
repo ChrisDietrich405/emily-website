@@ -1,5 +1,5 @@
 import React from "react";
-import RecipeSlider from "../../components/RecipeSlider";
+import ContentSlider from "../../components/ContentSlider";
 
 import Banner from "../../components/Banner";
 
@@ -12,7 +12,7 @@ function Recipes() {
     <div>
       <Banner picturePath={bannerPicture} />
       <div className={styles.recipes_container}>
-        <RecipeSlider />
+        <ContentSlider />
       </div>
     </div>
   );

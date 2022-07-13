@@ -5,6 +5,7 @@ import Recipes from "../../pages/Recipes";
 import Contact from "../../pages/Contact";
 import Services from "../../pages/Services";
 import Blogs from "../../pages/Blogs";
+import Nutrition from "../../pages/Nutrition"
 
 export default function Routes() {
   return (
@@ -14,6 +15,7 @@ export default function Routes() {
       <Route path="/contact" component={Contact} />
       <Route path="/services" component={Services} />
       <Route path="/blogs" component={Blogs} />
+      <Route path="/nutrition" component={Nutrition} />
     </Switch>
   );
 }

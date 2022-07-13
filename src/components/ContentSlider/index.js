@@ -6,7 +6,7 @@ import {
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
 
-import RecipeCard from "../RecipeCard";
+import Card from "../Card";
 
 import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick-theme.css";
 const slideshow1 = window.location.origin + "/assets/images/tofu.png";
 const slideshow2 = window.location.origin + "/assets/images/chickpeas.jpg";
 
-const RecipeSlider = () => {
+const ContentSlider = ({ slidesShown }) => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -38,7 +38,7 @@ const RecipeSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: slidesShown,
     slidesToScroll: 1,
     autoplay: true,
     nextArrow: <SampleNextArrow />,
@@ -81,7 +81,7 @@ const RecipeSlider = () => {
     <Slider {...settings} className={styles.slider_container}>
       {recipesList.map((recipeListItem) => {
         return (
-          <RecipeCard
+          <Card
             title={recipeListItem.title}
             image={recipeListItem.img}
             category={recipeListItem.category}
@@ -92,4 +92,4 @@ const RecipeSlider = () => {
   );
 };
 
-export default RecipeSlider;
+export default ContentSlider;

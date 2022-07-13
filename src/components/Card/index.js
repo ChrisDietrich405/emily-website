@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const RecipeCard = ({ title, image, category }) => {
+const Card = ({ title, image, category }) => {
   return (
     <div className={styles.card_container}>
       <div
@@ -16,4 +16,4 @@ const RecipeCard = ({ title, image, category }) => {
   );
 };
 
-export default RecipeCard;
+export default Card;

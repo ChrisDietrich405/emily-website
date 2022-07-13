@@ -40,8 +40,9 @@ const Header = () => {
                 <Link to="/blogs">
                   Blogs{" "}
                   <div className={styles.dropdown_content}>
-                    <Link>stuff</Link>
-                    <Link>some other stuff</Link>
+                    <Link to="/nutrition">Nutrition</Link>
+                    <Link>Move your body</Link>
+                    <Link>Travel</Link>
                   </div>
                 </Link>
               </li>

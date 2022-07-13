@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-.slider_container .slick-slide {
-  background: purple;
-}
-
 .next_button,
 .prev_button {
   position: absolute;
