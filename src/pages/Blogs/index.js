@@ -1,7 +1,9 @@
 import React from "react";
 
 import Banner from "../../components/Banner";
-import BlogPosts from "../../components/BlogPosts";
+import ContentSlider from "../../components/ContentSlider";
+
+import {blogsList} from "./slideData"
 
 import styles from "./styles.module.css";
 
@@ -13,7 +15,7 @@ function Blogs() {
       <Banner picturePath={bannerPicture} />
       <div className={styles.container}>
         <div className={styles.inner_container}>
-          <BlogPosts />
+          <ContentSlider numOfSlides={4} slideContent={blogsList} />
         </div>
       </div>
     </div>

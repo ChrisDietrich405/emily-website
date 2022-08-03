@@ -21,7 +21,14 @@ const Header = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/recipes">Recipes</Link>
+                <Link to="/recipes">
+                  Recipes
+                  <div className={styles.dropdown_content}>
+                    <Link to="/breakfast">Breakfast</Link>
+                    <Link>Move your body</Link>
+                    <Link>Travel</Link>
+                  </div>
+                </Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>

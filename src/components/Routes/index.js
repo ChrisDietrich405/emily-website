@@ -6,6 +6,8 @@ import Contact from "../../pages/Contact";
 import Services from "../../pages/Services";
 import Blogs from "../../pages/Blogs";
 import Nutrition from "../../pages/Nutrition"
+import Breakfast from "../../pages/Breakfast"
+
 
 export default function Routes() {
   return (
@@ -16,6 +18,7 @@ export default function Routes() {
       <Route path="/services" component={Services} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/nutrition" component={Nutrition} />
+      <Route path="/breakfast" component={Breakfast} />
     </Switch>
   );
 }
