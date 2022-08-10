@@ -7,6 +7,7 @@ import Services from "../../pages/Services";
 import Blogs from "../../pages/Blogs";
 import Nutrition from "../../pages/Nutrition"
 import Breakfast from "../../pages/Breakfast"
+import MainCourse from "../../pages/MainCourse"
 
 
 export default function Routes() {
@@ -19,6 +20,7 @@ export default function Routes() {
       <Route path="/blogs" component={Blogs} />
       <Route path="/nutrition" component={Nutrition} />
       <Route path="/breakfast" component={Breakfast} />
+      <Route path="/main-course" component={MainCourse} />
     </Switch>
   );
 }

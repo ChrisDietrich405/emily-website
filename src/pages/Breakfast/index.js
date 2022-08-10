@@ -14,7 +14,7 @@ const Breakfast = () => {
     <div>
         <Banner picturePath={bannerPicture}/>
         <div className={styles.breakfast_container}>
-            <ContentSlider numOfSlides={2} slideContent={breakfastList}/>
+            <ContentSlider childrenImageHeight="large" numOfSlides={2} slideContent={breakfastList}/>
         </div>
     </div>
   )

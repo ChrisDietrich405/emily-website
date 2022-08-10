@@ -25,6 +25,7 @@ const Header = () => {
                   Recipes
                   <div className={styles.dropdown_content}>
                     <Link to="/breakfast">Breakfast</Link>
+                    <Link to="/main-course">Main Course</Link>
                     <Link>Move your body</Link>
                     <Link>Travel</Link>
                   </div>

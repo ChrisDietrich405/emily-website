@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const Card = ({ title, image, category }) => {
+const Card = ({ imageHeight, title, image, category }) => {
   return (
     <div className={styles.card_container}>
       <div
-        className={styles.image_container}
+        className={`${styles.image_container} ${styles[imageHeight]} `}
         style={{ backgroundImage: `url(${image})` }}
       >
         <img className={styles.image} src={image} alt={title} title={title} />

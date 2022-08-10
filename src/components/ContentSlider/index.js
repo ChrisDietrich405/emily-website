@@ -12,8 +12,7 @@ import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-const ContentSlider = ({ numOfSlides, slideContent }) => {
+const ContentSlider = ({ childrenImageHeight,numOfSlides, slideContent }) => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -43,12 +42,12 @@ const ContentSlider = ({ numOfSlides, slideContent }) => {
     prevArrow: <SamplePrevArrow />,
   };
 
-  
   return (
     <Slider {...settings} className={styles.slider_container}>
       {slideContent.map((listItem) => {
         return (
           <Card
+            imageHeight={childrenImageHeight}
             title={listItem.title}
             image={listItem.img}
             category={listItem.category}

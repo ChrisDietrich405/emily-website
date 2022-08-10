@@ -16,6 +16,14 @@
   margin-bottom: 20px;
 }
 
+.medium {
+  height: 150px;
+}
+
+.large {
+  height: 250px;
+}
+
 .card_container p {
   color: #63b5b5;
   font-size: 19px;
