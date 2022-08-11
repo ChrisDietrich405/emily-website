@@ -12,7 +12,7 @@ import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ContentSlider = ({ childrenImageHeight,numOfSlides, slideContent }) => {
+const ContentSlider = ({ childrenImageHeight, numOfSlides, slideContent }) => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (

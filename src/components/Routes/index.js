@@ -8,6 +8,8 @@ import Blogs from "../../pages/Blogs";
 import Nutrition from "../../pages/Nutrition"
 import Breakfast from "../../pages/Breakfast"
 import MainCourse from "../../pages/MainCourse"
+import AppetizersSnacks from "../../pages/AppetizersSnacks";
+import SmoothiesDrinks from "../../pages/Smoothies&Drinks";
 
 
 export default function Routes() {
@@ -21,6 +23,15 @@ export default function Routes() {
       <Route path="/nutrition" component={Nutrition} />
       <Route path="/breakfast" component={Breakfast} />
       <Route path="/main-course" component={MainCourse} />
+      <Route path="/appetizers-snacks" component={AppetizersSnacks} />
+      <Route path="/smoothies-drinks" component={SmoothiesDrinks} />
     </Switch>
   );
 }
+
+
+
+
+
+
+
