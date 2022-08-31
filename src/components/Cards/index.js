@@ -1,5 +1,4 @@
-// import grid1 from "../../assets/images/chickpeas.jpg";
-// import grid2 from "../../images/tofu.png";
+
 
 import styles from "./styles.module.css";
 
