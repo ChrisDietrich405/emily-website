@@ -1,4 +1,4 @@
-const questions = [
+export const questions = [
     {
       id: 1,
       title: 'Do I have to allow the use of cookies?',

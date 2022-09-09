@@ -41,21 +41,33 @@ const Header = () => {
                 <Link to="/services">
                   Services{" "}
                   <div className={styles.dropdown_content}>
-                    <Link>stuff</Link>
+                    {/* <Link>stuff</Link>
                     <Link>some other stuff</Link>
-                    <Link>more stuff</Link>
+                    <Link>more stuff</Link> */}
                   </div>
                 </Link>
               </li>
               <li>
-                <Link to="/blogs">
+              <Link to="/recipes">
+                  Blogs
+                  <div className={styles.dropdown_content}>
+                    <Link to="/nutrition">Nutrition</Link>
+                    <Link to="/main-course">Main Course</Link>
+                    <Link to="/appetizers-snacks">Appetizers & Snacks</Link>
+                    <Link to="/smoothies-drinks">Smoothies & Drinks</Link>
+                    <Link to="/move-your-body">Move Your Body</Link>
+
+                 
+                  </div>
+                </Link>
+                {/* <Link to="/blogs">
                   Blogs{" "}
                   <div className={styles.dropdown_content}>
                     <Link to="/nutrition">Nutrition</Link>
                     <Link>Move your body</Link>
                     <Link>Travel</Link>
                   </div>
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link to="/faq">

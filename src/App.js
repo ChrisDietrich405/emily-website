@@ -5,8 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Routes from "./components/Routes";
-
-import styles from "./Global.module.css";
+import styles from "./Global.module.css"
 
 function App() {
   return (

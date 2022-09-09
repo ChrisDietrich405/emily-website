@@ -1,16 +1,14 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import AccordionQuestion from "./AccordionQuestion";
+
+import styles from "./styles.module.css";
 
 const Accordion = ({ questions }) => {
-    const [showInfo, setShowInfo] = useState(false)
+  console.log(questions);
   return (
-    <div>
-      {questions.map((question) => {
-        return (
-          <div>
-            <h3 onClick={() => setShowInfo(!showInfo)}>{question.question}</h3>
-            {showInfo && <p>{question.answer}</p> }
-          </div>
-        );
+    <div className={styles.accordion_wrapper}>
+      {questions.map((question, index) => {
+        return <AccordionQuestion key={index} question={question} />;
       })}
     </div>
   );
