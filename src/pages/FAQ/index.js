@@ -12,8 +12,11 @@ const FAQ = () => {
   return (
     <div>
       <Banner picturePath={bannerPicture} />
-      <div className={styles.accordion_container}>
-        <Accordion questions={questions} />
+      <div className={styles.faq_container}>
+        <h1>Frequently Asked Questions</h1>
+        <div className={styles.accordion_container}>
+          <Accordion questions={questions} />
+        </div>
       </div>
     </div>
   );

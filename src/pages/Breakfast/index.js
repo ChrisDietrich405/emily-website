@@ -11,12 +11,12 @@ const bannerPicture = window.location.origin + "/assets/images/tofu.png";
 
 const Breakfast = () => {
   return (
-    <div>
+    <>
         <Banner picturePath={bannerPicture}/>
-        <div className={styles.breakfast_container}>
+        <section className="inner_container">
             <ContentSlider childrenImageHeight="large" numOfSlides={2} slideContent={breakfastList}/>
-        </div>
-    </div>
+        </section>
+    </>
   )
 }
 

@@ -1,23 +1,27 @@
-import React from 'react'
+import React from "react";
 
-import ContentSlider from '../../components/ContentSlider'
-import Banner from '../../components/Banner'
+import ContentSlider from "../../components/ContentSlider";
+import Banner from "../../components/Banner";
 
-import { mainCourseList } from './slideData'
+import { mainCourseList } from "./slideData";
 
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 const bannerPicture = window.location.origin + "/assets/images/tofu.png";
 
 const MainCourse = () => {
   return (
-    <div>
-    <Banner picturePath={bannerPicture}/>
-    <div className={styles.main_course_container}>
-        <ContentSlider childrenImageHeight="medium" numOfSlides={3} slideContent={mainCourseList}/>
-    </div>
-</div>
-  )
-}
+    <>
+      <Banner picturePath={bannerPicture} />
+      <section className="inner_container">
+        <ContentSlider
+          childrenImageHeight="medium"
+          numOfSlides={3}
+          slideContent={mainCourseList}
+        />
+      </section>
+    </>
+  );
+};
 
-export default MainCourse
+export default MainCourse;

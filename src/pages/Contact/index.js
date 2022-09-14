@@ -23,7 +23,7 @@ function Contact() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className="inner_container">
       <div className={styles.inner}>
         <div className={styles.columns}>
           <div className={styles.form_wrapper}>

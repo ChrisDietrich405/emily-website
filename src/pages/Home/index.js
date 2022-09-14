@@ -5,10 +5,12 @@ import styles from "./styles.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Slideshow />
-      <Cards />
-      <PictureCards />
-    </div>
+      <section className={`${styles.container} inner_container`}>
+        <Cards />
+        <PictureCards />
+      </section>
+    </>
   );
 }

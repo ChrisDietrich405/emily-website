@@ -16,20 +16,6 @@
   justify-content: center;
 }
 
-/* @media only screen and (max-width: 1024px) {
-    .slideshow-container {
-      .slideshow {
-        width: 700px;
-        height: 350px;
-      }
-  
-      .slideshow-image {
-        width: 700px;
-        height: 400px;
-      }
-    }
-  } */
-
 .slideshow-container:hover {
   transition: 1s all;
 }
@@ -43,7 +29,6 @@
 }
 
 .slideshow {
-  margin-bottom: 100px;
   width: 100%;
   height: 520px;
 }

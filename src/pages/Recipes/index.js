@@ -11,12 +11,12 @@ const bannerPicture = window.location.origin + "/assets/images/tofu.png";
 
 function Recipes() {
   return (
-    <div>
+    <>
       <Banner picturePath={bannerPicture} />
-      <div className={styles.recipes_container}>
+      <section className="inner_container">
         <ContentSlider numOfSlides={3} slideContent={recipesList}/>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 
