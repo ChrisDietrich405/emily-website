@@ -1,4 +1,8 @@
+.services_info_container + .services_info_container {
+  margin-top: 25px;  
+}
 
 .services_info_container h2 {
+  margin-bottom: 10px; 
   color: #63b5b5;
 }

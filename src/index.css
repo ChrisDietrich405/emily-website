@@ -6,7 +6,14 @@
 
 body {
   padding-top: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 ul {
   list-style: none;
@@ -17,11 +24,9 @@ img {
   display: block;
 }
 
-.inner_container {
+.inner-container {
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 70px 0;
-  background: purple; 
+  background: purple;
 }
-
-

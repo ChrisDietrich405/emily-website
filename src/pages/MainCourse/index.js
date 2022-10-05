@@ -13,7 +13,7 @@ const MainCourse = () => {
   return (
     <>
       <Banner picturePath={bannerPicture} />
-      <section className="inner_container">
+      <section className="inner-container">
         <ContentSlider
           childrenImageHeight="medium"
           numOfSlides={3}

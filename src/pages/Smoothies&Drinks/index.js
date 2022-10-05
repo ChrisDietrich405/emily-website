@@ -11,7 +11,7 @@ const SmoothiesDrinks = () => {
   return (
     <>
       <Banner picturePath={bannerPath} />
-      <section className="inner_container">
+      <section className="inner-container">
         <ContentSlider
           childrenImageHeight="large"
           numOfSlides={2}

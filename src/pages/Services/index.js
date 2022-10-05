@@ -10,22 +10,20 @@ function Services() {
   return (
     <>
       <Banner picturePath={bannerPicture} />
-      <section className="inner_container">
-        <div className={styles.inner_container}>
-          <div className={styles.services_info_container}>
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-              illum nihil labore quaerat ea ipsum.
-            </p>
-          </div>
-          <div className={styles.services_info_container}>
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-              illum nihil labore quaerat ea ipsum.
-            </p>
-          </div>
+      <section className="inner-container">
+        <div className={styles.services_info_container}>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            illum nihil labore quaerat ea ipsum.
+          </p>
+        </div>
+        <div className={styles.services_info_container}>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            illum nihil labore quaerat ea ipsum.
+          </p>
         </div>
       </section>
     </>

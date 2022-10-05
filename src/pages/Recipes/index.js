@@ -3,7 +3,7 @@ import React from "react";
 import ContentSlider from "../../components/ContentSlider";
 import Banner from "../../components/Banner";
 
-import {recipesList} from "./slideData"
+import { recipesList } from "./slideData";
 
 import styles from "./styles.module.css";
 
@@ -13,8 +13,8 @@ function Recipes() {
   return (
     <>
       <Banner picturePath={bannerPicture} />
-      <section className="inner_container">
-        <ContentSlider numOfSlides={3} slideContent={recipesList}/>
+      <section className="inner-container">
+        <ContentSlider numOfSlides={3} slideContent={recipesList} />
       </section>
     </>
   );

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Slideshow />
-      <section className={`${styles.container} inner_container`}>
+      <section className={`${styles.container} inner-container`}>
         <Cards />
         <PictureCards />
       </section>
