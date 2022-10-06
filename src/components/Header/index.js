@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import SocialIcons from "../SocialIcons";
 
 import styles from "./styles.module.css";
+const logo = window.location.origin + "/assets/images/logo.png";
+
 
 const Header = () => {
   return (
@@ -14,7 +16,9 @@ const Header = () => {
       </div>
       <div className={styles.header_content}>
         <div className={styles.inner}>
-          <div className={styles.logo}>Logo</div>
+          <div className={styles.logo}>
+            <img src={logo} style={{width: "60px"}} alt="" />
+          </div>
           <div className={styles.nav_menu}>
             <ul>
               <li>
@@ -39,41 +43,21 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/services">
-                  Services{" "}
-                  <div className={styles.dropdown_content}>
-                    {/* <Link>stuff</Link>
-                    <Link>some other stuff</Link>
-                    <Link>more stuff</Link> */}
-                  </div>
+                  Services <div className={styles.dropdown_content}></div>
                 </Link>
               </li>
               <li>
-              <Link to="/recipes">
+                <Link to="/blogs">
                   Blogs
                   <div className={styles.dropdown_content}>
                     <Link to="/nutrition">Nutrition</Link>
-                    <Link to="/main-course">Main Course</Link>
-                    <Link to="/appetizers-snacks">Appetizers & Snacks</Link>
-                    <Link to="/smoothies-drinks">Smoothies & Drinks</Link>
-                    <Link to="/move-your-body">Move Your Body</Link>
 
-                 
+                    <Link to="/move-your-body">Move Your Body</Link>
                   </div>
                 </Link>
-                {/* <Link to="/blogs">
-                  Blogs{" "}
-                  <div className={styles.dropdown_content}>
-                    <Link to="/nutrition">Nutrition</Link>
-                    <Link>Move your body</Link>
-                    <Link>Travel</Link>
-                  </div>
-                </Link> */}
               </li>
               <li>
-                <Link to="/faq">
-                FAQ
-                 
-                </Link>
+                <Link to="/faq">FAQ</Link>
               </li>
             </ul>
           </div>

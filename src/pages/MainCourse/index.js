@@ -7,7 +7,7 @@ import { mainCourseList } from "./slideData";
 
 import styles from "./styles.module.css";
 
-const bannerPicture = window.location.origin + "/assets/images/tofu.png";
+const bannerPicture = window.location.origin + "/assets/images/vegfood.jpg";
 
 const MainCourse = () => {
   return (

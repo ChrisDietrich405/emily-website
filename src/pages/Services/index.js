@@ -4,7 +4,7 @@ import Banner from "../../components/Banner";
 
 import styles from "./styles.module.css";
 
-const bannerPicture = window.location.origin + "/assets/images/tofu.png";
+const bannerPicture = window.location.origin + "/assets/images/vegfood.jpg";
 
 function Services() {
   return (
