@@ -1,0 +1,14 @@
+.text_container + .text_container {
+  margin-top: 25px;
+}
+
+.text_container h3 {
+  margin-bottom: 10px; 
+  color: #63b5b5;
+}
+
+.text_container p + p {
+  margin-top: 5px; 
+}
+
+  

@@ -33,7 +33,6 @@ const Header = () => {
                     <Link to="/appetizers-snacks">Appetizers & Snacks</Link>
                     <Link to="/smoothies-drinks">Smoothies & Drinks</Link>
                     <Link to="/move-your-body">Move Your Body</Link>
-
                     <Link>Travel</Link>
                   </div>
                 </Link>

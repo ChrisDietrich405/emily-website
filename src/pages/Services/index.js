@@ -1,6 +1,9 @@
 import React from "react";
 
+import { servicesData } from "./data";
+
 import Banner from "../../components/Banner";
+import Text from "../../components/Text";
 
 import styles from "./styles.module.css";
 
@@ -11,20 +14,7 @@ function Services() {
     <>
       <Banner picturePath={bannerPicture} />
       <section className="inner-container">
-        <div className={styles.services_info_container}>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-            illum nihil labore quaerat ea ipsum.
-          </p>
-        </div>
-        <div className={styles.services_info_container}>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-            illum nihil labore quaerat ea ipsum.
-          </p>
-        </div>
+       <Text servicesData={servicesData}/>
       </section>
     </>
   );
