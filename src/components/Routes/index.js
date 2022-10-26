@@ -4,6 +4,8 @@ import Home from "../../pages/Home";
 import Recipes from "../../pages/Recipes";
 import Contact from "../../pages/Contact";
 import Services from "../../pages/Services";
+import Organizations from "../../pages/Organizations";
+import Photography from "../../pages/Photography";
 import Blogs from "../../pages/Blogs";
 import FAQ from "../../pages/FAQ";
 import Nutrition from "../../pages/Nutrition"
@@ -21,6 +23,9 @@ export default function Routes() {
       <Route path="/recipes" component={Recipes} />
       <Route path="/contact" component={Contact} />
       <Route path="/services" component={Services} />
+      <Route path="/organizations" component={Organizations} />
+      <Route path="/photography" component={Photography} />
+      <Route path="/routes" component={Routes} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/faq" component={FAQ} />
       <Route path="/nutrition" component={Nutrition} />

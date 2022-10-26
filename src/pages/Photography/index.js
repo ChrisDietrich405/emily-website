@@ -1,23 +1,19 @@
 import React from "react";
-
-import { servicesData } from "./data";
-
 import Banner from "../../components/Banner";
 import Text from "../../components/Text";
+import { photographyData } from "./data";
 
-import styles from "./styles.module.css";
+const bannerPicture = `${window.location.origin}/assets/images/vegfood.jpg`;
 
-const bannerPicture = window.location.origin + "/assets/images/vegfood.jpg";
-
-function Services() {
+const Photography = () => {
   return (
     <>
       <Banner picturePath={bannerPicture} />
       <section className="inner-container">
-       <Text data={servicesData}/>
+        <Text data={photographyData} />
       </section>
     </>
   );
-}
+};
 
-export default Services;
+export default Photography;

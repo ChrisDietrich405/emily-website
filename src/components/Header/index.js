@@ -42,9 +42,15 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/services">
-                  Services <div className={styles.dropdown_content}></div>
+                  Services
+                  <div className={styles.dropdown_content}>
+                    <Link to="/organizations">Organizations</Link>
+
+                    <Link to="/photography">Photography</Link>
+                  </div>
                 </Link>
               </li>
+              
               <li>
                 <Link to="/blogs">
                   Blogs

@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from "./styles.module.css"
 
-const Text = ({servicesData}) => {
+const Text = ({data}) => {
   return (
     < >
-      {servicesData.map((service) => {
+      {data.map((content) => {
         return (
           <div className={styles.text_container}>
-          <h3>{service.title}</h3> 
-          {service.body.map((paragraph) => {
+          <h3>{content.title}</h3> 
+          {content.body.map((paragraph) => {
             return (
               <p>{paragraph}</p>
             )
