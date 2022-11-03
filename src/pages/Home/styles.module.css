@@ -1,0 +1,9 @@
+.intro {
+  display: flex;
+  margin-bottom: 30px;  
+}
+
+.photo {
+  max-width: 400px;
+  margin-right: 20px;
+}
