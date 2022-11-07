@@ -1,4 +1,3 @@
-
 const slideshow1 = window.location.origin + "/assets/images/tofu.png";
 const slideshow2 = window.location.origin + "/assets/images/chickpeas.jpg";
 

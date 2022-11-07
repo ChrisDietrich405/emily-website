@@ -1,4 +1,4 @@
-export const organizationData = [
+export const otherData = [
     {
       title: "Lorem, ipsum dolor.",
       body: [

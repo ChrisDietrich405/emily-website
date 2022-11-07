@@ -5,6 +5,8 @@ import Slideshow from "../../components/Slideshow";
 import Cards from "../../components/Cards";
 import PictureCards from "../../components/PictureCards";
 import styles from "./styles.module.css";
+import List from "../../components/List";
+import { homeData, homeData2 } from "./homeData";
 
 const EmPicture = window.location.origin + "/assets/images/vegfood.jpg";
 
@@ -36,9 +38,11 @@ export default function Home() {
               <p id="some">
                 These healthy lifestyle practices I abbreviate as SPARC since
                 they are sure to add spark to your life. They are as follows:
-                1). Stress management & self-care 2). Plant-based nutrition &
-                purpose 3). Adequate hydration & activity 4). Restful sleep 5).
-                Connection & community Early in my career as a Dietitian at
+
+                < List data={homeData}/>
+                
+                
+                Early in my career as a Dietitian at
                 several nursing homes in Baltimore City, I witnessed what seemed
                 like immense suffering and reduced quality of life in men and
                 women, some as young as myself at the time (late 20s) due to
@@ -54,13 +58,7 @@ export default function Home() {
                 plant-based or moving in that direction and embracing other
                 elements of SPARC. A few of the health problems that can be
                 lessened or resolved by embracing the SPARC practices include:
-                High blood pressure High cholesterol High fasting blood sugars
-                and elevated HbA1c Chronic diseases like Type 2 Diabetes and
-                Heart Disease Joint pain and inflammation Low mood and/or energy
-                Difficulty losing weight and/or maintaining ideal weight You
-                will be happy to hear that eating plant-based means no more
-                calorie counting, portion control, or feeling deprived! Poor
-                digestion Migraines
+                <List data={homeData2}/>
               </p>
             )}
           </div>
