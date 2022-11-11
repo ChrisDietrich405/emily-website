@@ -45,6 +45,7 @@ const Header = () => {
                   Services
                   <div className={styles.dropdown_content}>
                     <Link to="/organizations">Organizations</Link>
+                    <Link to="/offerings">What we offer</Link>
 
                     <Link to="/photography">Photography</Link>
                   </div>
