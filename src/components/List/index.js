@@ -3,11 +3,11 @@ import Home from "../../pages/Home";
 
 const List = ({ data }) => {
   return (
-    <ol>
+    <ul>
       {data.map((item) => {
         return <li>{item}</li>;
       })}
-    </ol>
+    </ul>
   );
 };
 

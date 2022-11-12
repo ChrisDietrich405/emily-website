@@ -1,0 +1,21 @@
+.offerings_title {
+    padding-bottom: 20px; 
+}
+
+.offerings_list {
+    list-style: circle !important;
+}
+
+.program_info {
+    padding: 20px 0;
+}
+
+.program_info h3 {
+    text-align: center;
+    padding: 20px 0;  
+}
+
+.program_details {
+    font-weight: bold;
+    
+}

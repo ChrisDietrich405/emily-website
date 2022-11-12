@@ -1,5 +1,5 @@
 export const homeData = [
-    "stress management", "plant-based nutrition", "hydration", "sleep", "community"
+    "Stress management", "Plant-based nutrition", "Hydration", "Sleep", "Community"
 ]
 
 export const homeData2 = [
