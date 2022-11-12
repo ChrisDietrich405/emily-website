@@ -54,7 +54,7 @@ export default function Home() {
               <p>
                 These healthy lifestyle practices I abbreviate as SPARC since
                 they are sure to add spark to your life. They are as follows:
-                <List2 data={homeData} />
+                <List data={homeData} ordered={true}/>
                 Early in my career as a Dietitian at several nursing homes in
                 Baltimore City, I witnessed what seemed like immense suffering
                 and reduced quality of life in men and women, some as young as
@@ -71,7 +71,7 @@ export default function Home() {
                 other elements of SPARC. A few of the health problems that can
                 be lessened or resolved by embracing the SPARC practices
                 include:
-                <List data={homeData2} />
+                <List data={homeData2} ordered={false}/>
               </p>
             )}
           </div>
