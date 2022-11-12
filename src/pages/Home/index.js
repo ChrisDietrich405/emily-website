@@ -1,25 +1,39 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Slideshow from "../../components/Slideshow";
 import Cards from "../../components/Cards";
 import PictureCards from "../../components/PictureCards";
 import styles from "./styles.module.css";
-import List from "../../components/List";
 import { homeData, homeData2 } from "./homeData";
+import List from "../../components/List";
+import List2 from "../../components/List2";
 
 const EmPicture = window.location.origin + "/assets/images/vegfood.jpg";
 
 export default function Home() {
   const [readMore, setReadMore] = useState(false);
+  //const [divHeight, setDivHeight] = useState(0);
+  //const showMoreRef = useRef(null);
+
+  //const linksHeight = showMoreRef?.current?.getBoundingClientRect().height;
+  //const handleReadMore = () => {
+    //setReadMore((prevState) => !prevState);
+    //setDivHeight(linksHeight);
+  //};
 
   return (
     <>
       <Slideshow />
-      <section className={`${styles.container} inner-container`}>
+      <section id="some"
+        //ref={showMoreRef}
+        className={`${styles.container} inner-container`}
+      >
+       
         <div className={styles.intro}>
           <img src={EmPicture} alt="Em photo" className={styles.photo} />
           <div>
+          {/* style={{height: `${divHeight}px`}}> */}
             <h1>Hi, I'm Em</h1>
             <p>
               I have an immense passion for helping guide others toward a more
@@ -29,16 +43,18 @@ export default function Home() {
               and healthy lifestyle practices. &nbsp;
               <a
                 href="#some"
+                //{linksHeight}
+                //onClick={handleReadMore}
                 onClick={() => setReadMore((prevState) => !prevState)}
               >
                 {readMore ? "Show less" : "Read more"}
               </a>
             </p>
             {readMore && (
-              <p id="some">
+              <p>
                 These healthy lifestyle practices I abbreviate as SPARC since
                 they are sure to add spark to your life. They are as follows:
-                <List data={homeData} />
+                <List2 data={homeData} />
                 Early in my career as a Dietitian at several nursing homes in
                 Baltimore City, I witnessed what seemed like immense suffering
                 and reduced quality of life in men and women, some as young as
@@ -60,7 +76,6 @@ export default function Home() {
             )}
           </div>
         </div>
-
         <Cards />
         <PictureCards />
       </section>

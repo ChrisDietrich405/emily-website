@@ -1,13 +1,13 @@
 import React from "react";
 
-const List = ({ data }) => {
+const List2 = ({ data }) => {
   return (
-    <ul>
+    <ol>
       {data.map((item) => {
         return <li>{item}</li>;
       })}
-    </ul>
+    </ol>
   );
 };
 
-export default List;
+export default List2;
