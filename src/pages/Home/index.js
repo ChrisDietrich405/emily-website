@@ -9,7 +9,7 @@ import { homeData, homeData2 } from "./homeData";
 import List from "../../components/List";
 import List2 from "../../components/List2";
 
-const EmPicture = window.location.origin + "/assets/images/vegfood.jpg";
+const EmPicture = window.location.origin + "/assets/images/home-profile.jpg";
 
 export default function Home() {
   const [readMore, setReadMore] = useState(false);
