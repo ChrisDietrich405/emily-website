@@ -25,7 +25,7 @@ export default function Slideshow() {
         setIndex(index + 1);
       }
     }, 3000);
-    console.log("gekki", interval);
+
     return () => clearInterval(interval);
   }, [index, pause]);
 
@@ -36,6 +36,7 @@ export default function Slideshow() {
           <img
             className={`${index === i ? "active" : "inactive"} slideshow-image`}
             src={image}
+            key={i}
           ></img>
         ))}
       </div>

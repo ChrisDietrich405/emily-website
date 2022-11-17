@@ -37,28 +37,35 @@ export default function Home() {
               </a>
             </p>
             {readMore && (
-              <p>
-                These healthy lifestyle practices I abbreviate as SPARC since
-                they are sure to add spark to your life. They are as follows:
-                <List data={homeData} ordered={true}/>
-                Early in my career as a Dietitian at several nursing homes in
-                Baltimore City, I witnessed what seemed like immense suffering
-                and reduced quality of life in men and women, some as young as
-                myself at the time (late 20s) due to debilitating diseases like
-                stroke, Type 2 Diabetes, kidney failure, and others. I felt at a
-                loss of how to help them which led me to want to find a way to
-                help prevent others from suffering this same fate. Finding a way
-                to help empower, educate, and support individuals on their
-                journeys to achieving optimal health became my passion and
-                something I feel so grateful to be able to do! Plant-based
-                nutrition and other healthy lifestyle practices can help us to
-                look and feel our best! Research has shown the numerous benefits
-                to eating plant-based or moving in that direction and embracing
-                other elements of SPARC. A few of the health problems that can
-                be lessened or resolved by embracing the SPARC practices
-                include:
-                <List data={homeData2} ordered={false}/>
-              </p>
+              <>
+                <p>
+                  These healthy lifestyle practices I abbreviate as SPARC since
+                  they are sure to add spark to your life. They are as follows:</p>
+                <List data={homeData} ordered />
+
+                <p>Early in my career as a Dietitian at several nursing homes in
+                  Baltimore City, I witnessed what seemed like immense suffering
+                  and reduced quality of life in men and women, some as young as
+                  myself at the time (late 20s) due to debilitating diseases like
+                  stroke, Type 2 Diabetes, kidney failure, and others. I felt at a
+                  loss of how to help them which led me to want to find a way to
+                  help prevent others from suffering this same fate. Finding a way
+                  to help empower, educate, and support individuals on their
+                  journeys to achieving optimal health became my passion and
+                  something I feel so grateful to be able to do! Plant-based
+                  nutrition and other healthy lifestyle practices can help us to
+                  look and feel our best! Research has shown the numerous benefits
+                  to eating plant-based or moving in that direction and embracing
+                  other elements of SPARC. A few of the health problems that can
+                  be lessened or resolved by embracing the SPARC practices
+                  include:
+                </p>
+                <List data={homeData2} />
+              </>
+
+
+
+
             )}
           </div>
         </div>

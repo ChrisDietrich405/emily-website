@@ -11,7 +11,7 @@ a {
 }
 
 .header {
-  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   background: #fff;
@@ -59,6 +59,7 @@ a {
 
 .nav_menu li {
   padding: 5px 10px;
+  position: relative;
 }
 
 .nav_menu a {
@@ -79,7 +80,7 @@ a {
   padding: 10px 0;
 }
 
-.nav_menu a:hover > .dropdown_content {
+.nav_menu li:hover  .dropdown_content {
   opacity: 1;
   visibility: visible;
 }
