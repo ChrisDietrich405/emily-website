@@ -9,13 +9,12 @@ import Offerings from "../../pages/Offerings";
 import Photography from "../../pages/Photography";
 import Blogs from "../../pages/Blogs";
 import FAQ from "../../pages/FAQ";
-import Nutrition from "../../pages/Nutrition"
-import Breakfast from "../../pages/Breakfast"
-import MainCourse from "../../pages/MainCourse"
+import Nutrition from "../../pages/Nutrition";
+import Breakfast from "../../pages/Breakfast";
+import MainCourse from "../../pages/MainCourse";
 import AppetizersSnacks from "../../pages/AppetizersSnacks";
 import SmoothiesDrinks from "../../pages/Smoothies&Drinks";
 import MoveYourBody from "../../pages/MoveYourBody";
-
 
 export default function Routes() {
   return (
@@ -39,10 +38,3 @@ export default function Routes() {
     </Switch>
   );
 }
-
-
-
-
-
-
-

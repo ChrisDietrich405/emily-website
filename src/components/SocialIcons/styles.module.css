@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.social_icons_list {
+  display: flex;
+  list-style: none !important;
+}
+
 .social_icons_list li {
   padding: 5px 10px;
 }
