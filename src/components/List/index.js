@@ -1,10 +1,11 @@
 import React from 'react'
+import styles from "./styles.module.css"
 
 const List = ({ ordered, data }) => {
     return (
         <>
             {ordered ? (
-                <ol>
+                <ol className={styles.ordered_list}>
                     {data.map((item, index) => {
                         return (
                             <li key={index}>{item}</li>
@@ -12,7 +13,7 @@ const List = ({ ordered, data }) => {
                     })}
                 </ol>
             ) : (
-                <ul>
+                <ul className={styles.unordered_list}>
                     {data.map((item, index) => {
                         return (
                             <li key={index}>{item}</li>

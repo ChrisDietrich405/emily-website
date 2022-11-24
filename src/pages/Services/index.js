@@ -3,6 +3,7 @@ import React from "react";
 import { servicesData } from "./data";
 
 import Banner from "../../components/Banner";
+import List from "../../components/List";
 import Text from "../../components/Text";
 
 import styles from "./styles.module.css";
@@ -19,7 +20,8 @@ function Services() {
       <p>
         For Services: I am dedicated to helping you achieve your optimal health,
         let’s work together to see how we can help conquer your health-related
-        challenges! Initial consultation plus 1 follow-up session 2 total
+        challenges! Initial consultation plus 1 follow-up session 
+        2 total
         sessions, initial of 75-90 minutes and follow-up of 45 minutes Support
         via your preferred communication method in between sessions Personalized
         resources to help you achieve your goals Initial: Review of medical

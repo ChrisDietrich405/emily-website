@@ -1,9 +1,21 @@
 .intro {
   display: flex;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
+}
+
+.intro_title {
+  font-size: 50px;
+  color: #63b5b5;
 }
 
 .photo {
-  /* max-width: 400px;
-  margin-right: 20px; */
+  max-width: 400px;
+}
+
+.intro_text {
+  padding-left: 20px;
+}
+
+.intro_text p:not(:last-of-type) {
+  margin-bottom: 10px; 
 }
