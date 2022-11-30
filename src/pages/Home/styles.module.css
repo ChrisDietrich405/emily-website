@@ -1,21 +1,23 @@
 .intro {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 30px;
 }
 
-.intro_title {
-  font-size: 50px;
-  color: #63b5b5;
-}
 
 .photo {
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .intro_text {
   padding-left: 20px;
 }
 
-.intro_text p:not(:last-of-type) {
-  margin-bottom: 10px; 
+.intro_text p:not(:last-of-type), .biography_section p:not(:last-of-type) {
+  margin-bottom: 10px;  
+}
+
+.health_problem_list {
+  margin: 20px;
+  columns: 2; 
 }
