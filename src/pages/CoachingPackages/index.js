@@ -10,7 +10,7 @@ import styles from "./styles.module.css"
 
 const bannerPath = `${window.location.origin}/assets/images/vegfood.jpg`;
 
-const Organizations = () => {
+const CoachingPackages = () => {
   return (
     <>
       <Banner picturePath={bannerPath} />
@@ -61,4 +61,4 @@ const Organizations = () => {
   );
 };
 
-export default Organizations;
+export default CoachingPackages;

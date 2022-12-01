@@ -4,7 +4,7 @@ import Home from "../../pages/Home";
 import Recipes from "../../pages/Recipes";
 import Contact from "../../pages/Contact";
 import Services from "../../pages/Services";
-import Organizations from "../../pages/Organizations";
+import CoachingPackages from "../../pages/CoachingPackages";
 import Offerings from "../../pages/Offerings";
 import Photography from "../../pages/Photography";
 import Blogs from "../../pages/Blogs";
@@ -23,7 +23,7 @@ export default function Routes() {
       <Route path="/recipes" component={Recipes} />
       <Route path="/contact" component={Contact} />
       <Route path="/services" component={Services} />
-      <Route path="/organizations" component={Organizations} />
+      <Route path="/coaching-packages" component={CoachingPackages} />
       <Route path="/offerings" component={Offerings} />
       <Route path="/photography" component={Photography} />
       <Route path="/routes" component={Routes} />
