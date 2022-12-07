@@ -21,6 +21,7 @@ export default function Home() {
           <div className={styles.intro_text}>
             <h1 className="page_title">"Hi, I'm Em!"</h1>
             <p>make changes</p>
+            
             <p>
               I have an immense passion for helping guide others toward a more
               healthful and vibrant life. This passion has led me to pursue a
@@ -28,6 +29,7 @@ export default function Home() {
               Nutrition, and to learn as much as I can about balanced nutrition
               and healthy lifestyle practices.{" "}
             </p>
+            
             <p>
               These healthy lifestyle practices I abbreviate as SPARC since they
               are sure to add spark to your life. They are as follows:
