@@ -20,6 +20,7 @@ export default function Home() {
           <img src={EmPicture} alt="Em photo" className={styles.photo} />
           <div className={styles.intro_text}>
             <h1 className="page_title">"Hi, I'm Em!"</h1>
+            <p>make changes</p>
             <p>
               I have an immense passion for helping guide others toward a more
               healthful and vibrant life. This passion has led me to pursue a
@@ -43,7 +44,7 @@ export default function Home() {
 
             {/* {readMore && ( */}
             <>
-              <List data={homeData} ordered className={styles.ordered_list}/>
+              <List data={homeData} ordered className={styles.ordered_list} />
             </>
             {/* )} */}
           </div>
