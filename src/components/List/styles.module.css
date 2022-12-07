@@ -14,7 +14,7 @@
 .ordered_list li {
   position: relative;
   counter-increment: number;
-  margin-bottom: 8px;
+  margin: 8px;
 }
 
 .unordered_list li {

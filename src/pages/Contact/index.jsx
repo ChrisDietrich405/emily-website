@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { ContactResource } from "../../resources/contact-resource";
 
+
+const publicURL = import.meta.env.VITE_PUBLIC_URL;
+
 import styles from "./styles.module.css";
 
 function Contact() {
@@ -86,7 +89,7 @@ function Contact() {
           <div className={styles.picture_wrapper}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+              src={publicURL + "/assets/images/chickpeas.jpg"}
               alt="grid-pic"
             ></img>
           </div>

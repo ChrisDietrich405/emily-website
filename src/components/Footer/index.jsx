@@ -3,6 +3,8 @@
 
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
+const publicURL = import.meta.env.VITE_PUBLIC_URL;
+
 import SocialIcons from "../SocialIcons";
 
 import styles from "./styles.module.css";
@@ -17,7 +19,7 @@ const Footer = () => {
             <div className={styles.footer_container}>
               <div className={styles.nutritionist_pic_container}>
                 <img
-                  src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+                  src={publicURL + "/assets/images/tofu.png"}
                   className={styles.footer_pic}
                   alt="picture of dietician"
                 ></img>
@@ -28,14 +30,14 @@ const Footer = () => {
               </div>
               <div className={styles.meatless_monday_logo}>
                 <img
-                  src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+                  src={publicURL + "/assets/images/chickpeas.jpg"}
                   alt="picture of dietician"
                 ></img>
               </div>
               <div className={styles.credentials}>
                 {" "}
                 <img
-                  src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+                  src={publicURL + "/assets/images/tofu.png"}
                   alt="picture of dietician"
                 ></img>
                 <p>Lorem ipsum dolor sit, amet</p>

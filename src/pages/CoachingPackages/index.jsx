@@ -6,7 +6,7 @@ import { organizationData } from "./organizationData";
 import { organizationData2 } from "./organizationData";
 import { organizationData3 } from "./organizationData";
 
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 const bannerPath = `${window.location.origin}/assets/images/vegfood.jpg`;
 
@@ -15,13 +15,14 @@ const CoachingPackages = () => {
     <>
       <Banner picturePath={bannerPath} />
       <section className="inner-container">
-        <h1 className="page_title">
-          I am dedicated to helping you achieve your optimal health, let’s work
-          together to see how we can help conquer your health-related
-          challenges!
-        </h1>
+        <h2 className="page_title">
+          I am dedicated to helping you achieve your optimal health, let’s work together to
+          see how we can help conquer your health-related challenges! Let’s chat
+          to see what package is the best fit for you! Book your free discovery
+          call today!
+        </h2>
         <div className={styles.consultation_package}>
-          <h2>Initial consultation plus 1 follow-up session:</h2>
+          <h2>2 Session Package:</h2>
           <List data={organizationData} />
           <p>
             **Sessions to be within a 3- month timeframe from time of initial

@@ -43,7 +43,7 @@ export default function Home() {
 
             {/* {readMore && ( */}
             <>
-              <List data={homeData} ordered />
+              <List data={homeData} ordered className={styles.ordered_list}/>
             </>
             {/* )} */}
           </div>

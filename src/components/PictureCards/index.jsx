@@ -1,7 +1,8 @@
 // import grid1 from "../../images/chickpeas.jpg";
 // import grid2 from "../../images/tofu.png";
-
+const publicURL = import.meta.env.VITE_PUBLIC_URL;
 import styles from "./styles.module.css";
+
 
 const PictureCards = () => {
   return (
@@ -11,21 +12,21 @@ const PictureCards = () => {
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+              src={publicURL + "/assets/images/tofu.png"}
               alt="grid-pic"
             ></img>
           </div>
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+              src={publicURL + "/assets/images/chickpeas.jpg"}
               alt="grid-pic"
             ></img>
           </div>
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+              src={publicURL + "/assets/images/tofu.png"}
               alt="grid-pic"
             ></img>
           </div>

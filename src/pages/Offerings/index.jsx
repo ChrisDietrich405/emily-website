@@ -9,8 +9,8 @@ const offerings = () => {
   return (
     <main className="inner-container">
       <h2 className={styles.offerings_title}>
-        Nature’s Wellness Path’s Plant-Powered Weight Loss & Wellness Programs
-        are right for you if you are:
+        Nature’s Wellness Path’s Plant-Powered Weight Loss & Wellness Programs are
+        right for you if you are:
       </h2>
       <List data={offeringsData} className={styles.offering_list} />
       <section className={styles.program_info}>

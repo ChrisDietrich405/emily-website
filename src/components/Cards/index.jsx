@@ -1,8 +1,9 @@
-
-
 import styles from "./styles.module.css";
 
+const publicURL = import.meta.env.VITE_PUBLIC_URL;
+
 const Cards = () => {
+  console.log(publicURL)
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
@@ -10,7 +11,7 @@ const Cards = () => {
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+              src={publicURL + "/assets/images/chickpeas.jpg"}
               alt="grid-pic"
             ></img>
             <p>
@@ -22,7 +23,7 @@ const Cards = () => {
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+              src={publicURL + "/assets/images/tofu.png"}
               alt="grid-pic"
             ></img>
             <p>
@@ -34,7 +35,7 @@ const Cards = () => {
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/chickpeas.jpg"}
+              src={publicURL + "/assets/images/chickpeas.jpg"}
               alt="grid-pic"
             ></img>
             <p>
@@ -46,7 +47,7 @@ const Cards = () => {
           <div className={styles.grid}>
             <img
               className={styles.grid_pic}
-              src={process.env.PUBLIC_URL + "/assets/images/tofu.png"}
+              src={publicURL + "/assets/images/tofu.png"}
               alt="grid-pic"
             ></img>
             <p>
