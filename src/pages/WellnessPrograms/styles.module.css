@@ -1,3 +1,8 @@
+.wellness_container p {
+    padding-bottom: 20px !important;
+}
+
+
 .offerings_title {
     padding-bottom: 20px; 
 }
@@ -55,4 +60,8 @@
 
 .plan_contact {
     text-align: center;
+}
+
+.content_slider_container::before {
+    content: "hello"
 }

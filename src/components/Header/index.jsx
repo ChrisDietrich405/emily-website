@@ -46,7 +46,7 @@ const Header = () => {
                 </Link>
                 <div className={styles.dropdown_content}>
                   <Link to="/coaching-packages">Coaching Packages</Link>
-                  <Link to="/offerings">Wellness Programs</Link>
+                  <Link to="/wellness-programs">Wellness Programs</Link>
 
                   <Link to="/photography">Photography</Link>
                 </div>

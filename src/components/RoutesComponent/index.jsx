@@ -5,7 +5,7 @@ import Recipes from "../../pages/Recipes";
 import Contact from "../../pages/Contact";
 import Services from "../../pages/Services";
 import CoachingPackages from "../../pages/CoachingPackages";
-import Offerings from "../../pages/Offerings";
+import WellnessPrograms from "../../pages/WellnessPrograms";
 import Photography from "../../pages/Photography";
 import Blogs from "../../pages/Blogs";
 import FAQ from "../../pages/FAQ";
@@ -24,7 +24,7 @@ export default function RoutesComponent() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
       <Route path="/coaching-packages" element={<CoachingPackages />} />
-      <Route path="/offerings" element={<Offerings />} />
+      <Route path="/wellness-programs" element={<WellnessPrograms />} />
       <Route path="/photography" element={<Photography />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/faq" element={<FAQ />} />

@@ -2,9 +2,10 @@ import React from "react";
 import Banner from "../../components/Banner";
 import List from "../../components/List";
 import Text from "../../components/Text";
-import { organizationData } from "./organizationData";
-import { organizationData2 } from "./organizationData";
-import { organizationData3 } from "./organizationData";
+import { coachingData } from "./coachingData";
+import { coachingData2 } from "./coachingData";
+import { coachingData3 } from "./coachingData";
+import { coachingData4 } from "./coachingData";
 
 import styles from "./styles.module.css";
 
@@ -15,31 +16,33 @@ const CoachingPackages = () => {
     <>
       <Banner picturePath={bannerPath} />
       <section className="inner-container">
-        <h2 className="page_title">
-          I am dedicated to helping you achieve your optimal health, let’s work together to
-          see how we can help conquer your health-related challenges! Let’s chat
-          to see what package is the best fit for you! Book your free discovery
-          call today!
-        </h2>
+        <h2 className="page_title">Coaching Packages</h2>
         <div className={styles.consultation_package}>
           <h2>2 Session Package:</h2>
-          <List data={organizationData} />
-          <p>
-            **Sessions to be within a 3- month timeframe from time of initial
-            consultation
-          </p>
+          <p>Package includes:</p>
+          <List data={coachingData} />
+          <p>Cost: $120</p>
         </div>
         <div className={styles.consultation_package}>
-          <h2>Initial consultation plus 3 follow-up sessions</h2>
-          <List data={organizationData2} />
+          <h2>4 session package</h2>
+          <p>Package includes:</p>
+          <List data={coachingData2} />
+          <p>Cost: $200</p>
         </div>
         <div className={styles.consultation_package}>
-          <h2>Initial consultation plus 6 follow-up sessions:</h2>
-          <List data={organizationData3} />
-          <p>
-            **Sessions to be within a 6-month timeframe from time of initial
-            consultation
-          </p>
+          <h2>6 session package</h2>
+          <p>Package includes:</p>
+          <List data={coachingData3} />
+          <p>Cost: $275</p>
+          
+        </div>
+        <div className={styles.consultation_package}>
+          <h2>Follow-Up Session Package</h2>
+          <p>If you interested in continuing to work together and to receive ongoing support and accountability, this is a good option for you!</p>
+          <p>Package includes:</p>
+          <List data={coachingData4} />
+          <p>Cost: $100 for first set of follow-ups, $90 for subsequent ones</p>
+          
         </div>
         Plant-Powered Weight Loss and Wellness Programs Nature’s Wellness Path’s
         Plant-Powered Programs are right for you if you are: ● Sick of dieting,
@@ -56,7 +59,6 @@ const CoachingPackages = () => {
         and 12-week programs Book a free discovery call with me today so we can
         discuss your health-related challenges, goals, and how we can work
         together to get you on the path to optimal health!
-        {/* <Text data={organizationData} /> */}
       </section>
     </>
   );

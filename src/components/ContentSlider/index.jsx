@@ -47,6 +47,7 @@ const ContentSlider = ({ childrenImageHeight, numOfSlides, slideContent }) => {
       {slideContent.map((listItem) => {
         return (
           <Card
+            innerImage={innerImage}
             imageHeight={childrenImageHeight}
             title={listItem.title}
             image={listItem.img}
