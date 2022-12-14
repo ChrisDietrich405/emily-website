@@ -1,18 +1,31 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const Card = ({ imageHeight, title, image, category, innerImage }) => {
+shoes = {
+  nike: "33",
+  adidas: "333"
+}
+
+
+
+
+const Card = ({ imageHeight, listItem }) => {
+  console.log(styles);
   return (
     <div className={styles.card_container}>
       <div
         className={`${styles.image_container} ${styles[imageHeight]} `}
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${listItem.img})` }}
       >
-        <img className={styles.image} src={image} alt={title} title={title} />
+        <img
+          className={styles.image}
+          src={listItem.img}
+          alt={listItem.title}
+          title={listItem.title}
+        />
       </div>
-      <img src={innerImage} alt="" />
-      <p>{category}</p>
-      <h3>{title}</h3>
+      <p>{listItem.category}</p>
+      <h3>{listItem.title}</h3>
     </div>
   );
 };

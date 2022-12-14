@@ -7,12 +7,13 @@ import {
 } from "react-icons/bs";
 
 import Card from "../Card";
+import TextSlideCard from "../TextSlideCard";
 
 import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ContentSlider = ({ childrenImageHeight, numOfSlides, slideContent }) => {
+const ContentSlider = ({ childrenImageHeight, numOfSlides, slideContent, typeOfSlide }) => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -41,17 +42,24 @@ const ContentSlider = ({ childrenImageHeight, numOfSlides, slideContent }) => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+ 
 
   return (
     <Slider {...settings} className={styles.slider_container}>
       {slideContent.map((listItem) => {
+        if(typeOfSlide === "text") {
+          return (
+            <TextSlideCard listItem={listItem}/>
+          )
+        } 
         return (
           <Card
-            innerImage={innerImage}
+            // innerImage={innerImage}
             imageHeight={childrenImageHeight}
-            title={listItem.title}
-            image={listItem.img}
-            category={listItem.category}
+            listItem={listItem}
+            // title={listItem.title}
+            // image={listItem.img}
+            // category={listItem.category}
           />
         );
       })}

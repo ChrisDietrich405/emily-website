@@ -5,7 +5,8 @@ import { wellnessProgramsData2 } from "./wellnessPrograms";
 import { wellnessProgramsData3 } from "./wellnessPrograms";
 import { wellnessProgramsData4 } from "./wellnessPrograms";
 import ContentSlider from "../../components/ContentSlider";
-import { breakfastList } from "./slideData";
+import { testimonials } from "./testimonialData";
+
 import List from "../../components/List";
 
 import styles from "./styles.module.css";
@@ -68,9 +69,10 @@ const WellnessPrograms = () => {
            <p>Contact me to schedule a free discovery call to learn more about the programs and how they can help you to conquer your weight loss and wellness challenges!</p>
           </div>
           <ContentSlider
+          typeOfSlide="text"
           childrenImageHeight="large"
           numOfSlides={1}
-          slideContent={breakfastList}
+          slideContent={testimonials}
           className={styles.content_slider_container}
         />
       </div>
