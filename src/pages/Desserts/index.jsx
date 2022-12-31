@@ -2,13 +2,13 @@ import React from "react";
 import Banner from "../../components/Banner";
 import ContentSlider from "../../components/ContentSlider";
 
-import { moveYourBody } from "./slideData";
+import { desserts } from "./slideData";
 
 import styles from "./styles.module.css";
 
 const bannerPicture = window.location.origin + "/assets/images/tofu.png";
 
-const MoveYourBody = () => {
+const Desserts = () => {
   return (
     <>
       <Banner picturePath={bannerPicture} />
@@ -16,11 +16,11 @@ const MoveYourBody = () => {
         <ContentSlider
           childrenImageHeight="medium"
           numOfSlides={3}
-          slideContent={moveYourBody}
+          slideContent={desserts}
         />
       </section>
     </>
   );
 };
 
-export default MoveYourBody;
+export default Desserts;

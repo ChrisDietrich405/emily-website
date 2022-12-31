@@ -1,14 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-shoes = {
-  nike: "33",
-  adidas: "333"
-}
-
-
-
-
 const Card = ({ imageHeight, listItem }) => {
   console.log(styles);
   return (

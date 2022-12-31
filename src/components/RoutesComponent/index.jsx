@@ -14,7 +14,7 @@ import Breakfast from "../../pages/Breakfast";
 import MainCourse from "../../pages/MainCourse";
 import AppetizersSnacks from "../../pages/AppetizersSnacks";
 import SmoothiesDrinks from "../../pages/Smoothies&Drinks";
-import MoveYourBody from "../../pages/MoveYourBody";
+import Desserts from "../../pages/Desserts";
 
 export default function RoutesComponent() {
   return (
@@ -33,7 +33,7 @@ export default function RoutesComponent() {
       <Route path="/main-course" element={<MainCourse />} />
       <Route path="/appetizers-snacks" element={<AppetizersSnacks />} />
       <Route path="/smoothies-drinks" element={<SmoothiesDrinks />} />
-      <Route path="/move-your-body" element={<MoveYourBody />} />
+      <Route path="/desserts" element={<Desserts />} />
     </Routes>
   );
 }
