@@ -15,6 +15,7 @@ import MainCourse from "../../pages/MainCourse";
 import AppetizersSnacks from "../../pages/AppetizersSnacks";
 import SmoothiesDrinks from "../../pages/Smoothies&Drinks";
 import Desserts from "../../pages/Desserts";
+import RecipePage from "../../pages/RecipePage";
 
 export default function RoutesComponent() {
   return (
@@ -34,6 +35,7 @@ export default function RoutesComponent() {
       <Route path="/appetizers-snacks" element={<AppetizersSnacks />} />
       <Route path="/smoothies-drinks" element={<SmoothiesDrinks />} />
       <Route path="/desserts" element={<Desserts />} />
+      <Route path="/recipes/:url" element={<RecipePage />} />
     </Routes>
   );
 }

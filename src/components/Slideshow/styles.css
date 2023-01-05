@@ -53,29 +53,3 @@
   width: 900px;
   height: 500px;
 }
-
-/* @media only screen and (max-width: 820px) {
-    .slideshow-container {
-      width: 500px;
-      .slideshow {
-        height: 350px;
-      }
-      .slideshow-image {
-        height: 400px;
-      }
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .slideshow-container {
-      width: 300px;
-      .slideshow {
-        width: 300px;
-        height: 350px;
-      }
-      .slideshow-image {
-        width: 300px;
-        height: 400px;
-      }
-    }
-  } */

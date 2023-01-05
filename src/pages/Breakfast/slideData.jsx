@@ -6,6 +6,8 @@ export const breakfastList = [
     img: slideshow1,
     title: "quinoa dinner",
     category: "main course",
+    url: "/recipes/quinoa-dinner",
+    content: "hello world"
   },
   {
     img: slideshow2,
@@ -33,3 +35,5 @@ export const breakfastList = [
     category: "main course",
   },
 ];
+
+

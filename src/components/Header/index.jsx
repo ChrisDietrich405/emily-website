@@ -5,7 +5,6 @@ import SocialIcons from "../SocialIcons";
 import styles from "./styles.module.css";
 const logo = window.location.origin + "/assets/images/logo.png";
 
-
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -25,9 +24,7 @@ const Header = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/recipes">
-                  Recipes
-                </Link>
+                <Link to="/recipes">Recipes</Link>
                 <div className={styles.dropdown_content}>
                   <Link to="/breakfast">Breakfast</Link>
                   <Link to="/main-course">Main Course</Link>
@@ -41,9 +38,7 @@ const Header = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/services">
-                  Services
-                </Link>
+                <Link to="/services">Services</Link>
                 <div className={styles.dropdown_content}>
                   <Link to="/coaching-packages">Coaching Packages</Link>
                   <Link to="/wellness-programs">Wellness Programs</Link>
@@ -53,9 +48,7 @@ const Header = () => {
               </li>
 
               <li>
-                <Link to="/blogs">
-                  Blogs
-                </Link>
+                <Link to="/blogs">Blogs</Link>
                 <div className={styles.dropdown_content}>
                   <Link to="/nutrition">Nutrition</Link>
 
