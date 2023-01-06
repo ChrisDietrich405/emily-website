@@ -13,27 +13,24 @@ export const breakfastList = [
     img: slideshow2,
     title: "food dinner",
     category: "dessert",
+    url: "/recipes/dessert",
+    content: "dessert"
   },
   {
     img: slideshow1,
-    title: "quinoa dinner",
+    title: "shoe",
     category: "main course",
+    url: "/recipes/shoe",
+    content: "hello shoe"
   },
   {
     img: slideshow1,
-    title: "quinoa dinner",
+    title: "socks",
     category: "main course",
+    url: "/recipes/socks",
+    content: "hello socks"
   },
-  {
-    img: slideshow2,
-    title: "food dinner",
-    category: "dessert",
-  },
-  {
-    img: slideshow1,
-    title: "quinoa dinner",
-    category: "main course",
-  },
+  
 ];
 
 

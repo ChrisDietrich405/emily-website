@@ -22,6 +22,7 @@ export default function RoutesComponent() {
     <Routes>
       <Route path="/" exact={true} element={<Home />} />
       <Route path="/recipes" element={<Recipes />} />
+      <Route path="/recipes/:url" element={<RecipePage />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
       <Route path="/coaching-packages" element={<CoachingPackages />} />
@@ -35,7 +36,6 @@ export default function RoutesComponent() {
       <Route path="/appetizers-snacks" element={<AppetizersSnacks />} />
       <Route path="/smoothies-drinks" element={<SmoothiesDrinks />} />
       <Route path="/desserts" element={<Desserts />} />
-      <Route path="/recipes/:url" element={<RecipePage />} />
     </Routes>
   );
 }
