@@ -6,31 +6,28 @@ export const breakfastList = [
     img: slideshow1,
     title: "quinoa dinner",
     category: "main course",
-    url: "/recipes/quinoa-dinner",
-    content: "hello world"
+    url: "/recipes/breakfast/quinoa-dinner",
+    content: "hello world",
   },
   {
     img: slideshow2,
     title: "food dinner",
     category: "dessert",
-    url: "/recipes/dessert",
-    content: "dessert"
+    url: "/recipes/breakfast/dessert",
+    content: "dessert",
   },
   {
     img: slideshow1,
     title: "shoe",
     category: "main course",
-    url: "/recipes/shoe",
-    content: "hello shoe"
+    url: "/recipes/breakfast/shoe",
+    content: "hello shoe",
   },
   {
     img: slideshow1,
     title: "socks",
     category: "main course",
-    url: "/recipes/socks",
-    content: "hello socks"
+    url: "/recipes/breakfast/socks",
+    content: "hello socks",
   },
-  
 ];
-
-

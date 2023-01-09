@@ -3,28 +3,36 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { breakfastList } from "../Breakfast/slideData";
+import { desserts } from "../Desserts/slideData";
 
 const RecipePage = () => {
-  const { url } = useParams();
-  
-  const filterBreakfastRecipe = breakfastList.filter((item) => {
-    const splittedUrl = item.url.split("/")
-    return splittedUrl[1] === url
-  })
+  const { mealUrl, url } = useParams();
 
-  // const filterRecipe = breakfastList.filter((item) => item.title === "socks") 
-  
+  let filterRecipe = null;
+  if (mealUrl === "breakfast") {
+    filterRecipe = breakfastList.filter((item) => {
+      const splittedUrl = item.url.split("/");
+      console.log(splittedUrl);
+      return splittedUrl[3] === url;
+    });
+  } else if (mealUrl === "desserts") {
+    filterRecipe = desserts.filter((item) => {
+      const splittedUrl = item.url.split("/");
+      return splittedUrl[3] === url;
+    });
+  } else {
+    filterRecipe = null;
+  }
+
   return (
     <>
       <Header />
       <div style={{ marginTop: "200px" }}>
-          {filterBreakfastRecipe.map((item) => {
-            return (
-              <h1>{item.url}</h1>
-            )
-          })}
+        {filterRecipe.map((item) => {
+          return <h1>{item.content}</h1>;
+        })}
       </div>
-      {JSON.stringify(filterBreakfastRecipe)}
+
       <Footer />
     </>
   );
