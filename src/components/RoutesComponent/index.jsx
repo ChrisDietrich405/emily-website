@@ -22,7 +22,7 @@ export default function RoutesComponent() {
     <Routes>
       <Route path="/" exact={true} element={<Home />} />
       <Route path="/recipes" element={<Recipes />} />
-      <Route path="/recipes/:mealUrl/:url" element={<RecipePage />} />
+      <Route path="/recipes/:mealUrl/:specificRecipeUrl" element={<RecipePage />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
       <Route path="/coaching-packages" element={<CoachingPackages />} />

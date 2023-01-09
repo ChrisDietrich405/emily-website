@@ -4,9 +4,9 @@ const slideshow2 = window.location.origin + "/assets/images/chickpeas.jpg";
 export const breakfastList = [
   {
     img: slideshow1,
-    title: "quinoa dinner",
+    title: "quinoa breakfast",
     category: "main course",
-    url: "/recipes/breakfast/quinoa-dinner",
+    url: "/recipes/breakfast/quinoa-breakfast",
     content: "hello world",
   },
   {
