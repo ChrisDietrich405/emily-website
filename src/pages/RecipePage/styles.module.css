@@ -1,8 +1,23 @@
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto; 
 }
 
 .container h1 {
     text-align: center;
+    width: 600px;
+    margin: 30px auto; 
+    border-bottom: 1px solid black; 
+}
+
+.container ul {
+    margin-bottom: 30px; 
+}
+
+.container ol {
+    margin-bottom: 30px; 
+}
+
+.description {
+    margin-bottom: 30px; 
 }

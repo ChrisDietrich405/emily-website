@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { breakfastList } from "../Breakfast/slideData";
 import { desserts } from "../Desserts/slideData";
+import { mainCourseList } from "../MainCourse/slideData";
 
 import styles from "./styles.module.css";
 
@@ -21,6 +22,11 @@ const RecipePage = () => {
       const splittedUrl = item.url.split("/");
       return splittedUrl[3] === specificRecipeUrl;
     });
+  } else if (mealUrl === "main-course") {
+    filterRecipe = mainCourseList.filter((item) => {
+      const splittedUrl = item.url.split("/");
+      return splittedUrl[3] === specificRecipeUrl;
+    });
   } else {
     filterRecipe = [];
   }
@@ -28,12 +34,12 @@ const RecipePage = () => {
   return (
     <>
       <Header />
-      <div style={{ marginTop: "100px" }}>
+      <main style={{ marginTop: "100px" }}>
         {filterRecipe.map((item) => {
           return (
             <div className={styles.container}>
               <h1>{item.title}</h1>
-              <p>{item.description}</p>
+              <p className={styles.description}>{item.description}</p>
               <h2>Ingredients</h2>
               <ul>
                 {item.ingredients.map((ingredient) => {
@@ -46,10 +52,11 @@ const RecipePage = () => {
                   return <li>{instruction}</li>;
                 })}
               </ol>
+              <p>{item.additionalInformation}</p>
             </div>
           );
         })}
-      </div>
+      </main>
 
       <Footer />
     </>

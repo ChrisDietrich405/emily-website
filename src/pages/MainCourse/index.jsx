@@ -4,7 +4,6 @@ import ContentSlider from "../../components/ContentSlider";
 import Banner from "../../components/Banner";
 
 import { mainCourseList } from "./slideData";
-
 import styles from "./styles.module.css";
 
 const bannerPicture = window.location.origin + "/assets/images/vegfood.jpg";
